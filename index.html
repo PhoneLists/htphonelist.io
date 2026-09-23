@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phone List - Phone Number, WhatsApp, Telegram & Email Database</title>
+<meta name="description" content="Phone List - Explore phone number lists, WhatsApp number lists, Telegram data, email lists and special databases.">
+<meta name="keywords" content="phone list, phone number list, WhatsApp number list, Telegram number list, email list, phone database">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:#f6f8fc;color:#172033;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,calc(100% - 40px));margin:auto}
+.topbar{background:#0b1220;color:#dbe5f5;font-size:13px}
+.topbar .container{min-height:40px;display:flex;justify-content:space-between;align-items:center;gap:15px}
+.toplinks{display:flex;gap:18px;flex-wrap:wrap}.toplinks a:hover{color:#60a5fa}
+header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid #e7ebf2;box-shadow:0 4px 18px #1720330a}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:27px;font-weight:800;color:#2563eb}.logo span{color:#111827}
+nav ul{display:flex;align-items:center;gap:3px;list-style:none}
+nav a{display:block;padding:10px 11px;border-radius:8px;font-size:13px;font-weight:600;color:#374151}
+nav a:hover{background:#eff6ff;color:#2563eb}
+.menu-btn{display:none;border:0;background:#2563eb;color:white;width:42px;height:40px;border-radius:8px;font-size:19px}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0b1220 0%,#163f9e 55%,#2563eb 100%);color:#fff;padding:92px 0}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:#ffffff0d}
+.hero:before{width:480px;height:480px;right:-160px;top:-250px}.hero:after{width:300px;height:300px;left:-150px;bottom:-180px}
+.hero-content{position:relative;z-index:1;max-width:800px}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:7px 13px;border:1px solid #ffffff30;border-radius:30px;background:#ffffff0d;font-size:13px;margin-bottom:20px}
+.hero h1{font-size:52px;line-height:1.1;letter-spacing:-1.5px;margin-bottom:20px}
+.hero h1 span{color:#93c5fd}.hero p{max-width:720px;color:#dbeafe;font-size:17px;margin-bottom:30px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;font-weight:700;font-size:14px}
+.btn-primary{background:#fff;color:#1d4ed8}.btn-primary:hover{background:#eff6ff}
+.btn-outline{border:1px solid #ffffff55;color:#fff}.btn-outline:hover{background:#ffffff12}
+section{padding:72px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 40px}
+.section-head h2{font-size:34px;line-height:1.2;margin-bottom:10px}.section-head p{color:#687386}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #e4e9f1;border-radius:15px;padding:27px;box-shadow:0 7px 25px #17203308;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 35px #17203312;border-color:#c8dbfa}
+.icon{width:52px;height:52px;display:grid;place-items:center;border-radius:12px;background:#eff6ff;color:#2563eb;font-size:22px;margin-bottom:17px}
+.card h3{font-size:19px;margin-bottom:8px}.card p{color:#687386;font-size:14px;margin-bottom:17px}.link{color:#2563eb;font-size:13px;font-weight:700}
+.alt{background:#eef4fb}
+.country-search{max-width:650px;margin:0 auto 28px;position:relative}
+.country-search input{width:100%;height:50px;border:1px solid #d8dee8;border-radius:10px;padding:0 18px 0 45px;outline:none;font:inherit;background:#fff}
+.country-search input:focus{border-color:#60a5fa;box-shadow:0 0 0 3px #2563eb12}
+.country-search .search-icon{position:absolute;left:17px;top:15px;color:#788396}
+.countries{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.country{background:#fff;border:1px solid #e2e7ef;border-radius:9px;padding:13px 15px;font-size:13px;font-weight:600;color:#374151}
+.country:hover{background:#eff6ff;color:#2563eb;border-color:#bfdbfe}
+.cta{background:#111827;color:#fff;text-align:center;padding:72px 0}.cta h2{font-size:34px;margin-bottom:10px}.cta p{max-width:680px;margin:0 auto 25px;color:#cbd5e1}
+.faq{max-width:850px;margin:auto}.faq-item{background:#fff;border:1px solid #e3e8ef;border-radius:10px;margin-bottom:11px;overflow:hidden}
+.faq-q{cursor:pointer;padding:18px 20px;display:flex;justify-content:space-between;gap:15px;font-weight:700}.faq-a{display:none;padding:0 20px 18px;color:#687386;font-size:14px}
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.contact-card{text-align:center;background:#fff;border:1px solid #e3e8ef;border-radius:14px;padding:28px}.contact-card .icon{margin:0 auto 14px}.contact-card p{font-size:14px;color:#687386}
+footer{background:#0b1220;color:#cbd5e1;padding:55px 0 20px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:35px}.footer-title{color:#fff;font-weight:700;margin-bottom:15px}.footer-text{color:#94a3b8;font-size:14px}.footer-links{list-style:none}.footer-links li{margin:8px 0}.footer-links a{font-size:13px;color:#94a3b8}.footer-links a:hover{color:#fff}.social{display:flex;gap:8px;margin-top:18px}.social a{width:36px;height:36px;border:1px solid #334155;border-radius:50%;display:grid;place-items:center}.social a:hover{background:#2563eb;border-color:#2563eb}.copyright{border-top:1px solid #1f2937;margin-top:35px;padding-top:18px;text-align:center;color:#64748b;font-size:12px}
+@media(max-width:1000px){nav ul{display:none;position:absolute;left:20px;right:20px;top:112px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:10px;box-shadow:0 15px 30px #00000012}nav ul.show{display:block}nav li a{padding:11px}.menu-btn{display:block}.grid{grid-template-columns:repeat(2,1fr)}.countries{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.container{width:min(100% - 28px,1180px)}.topbar .container{justify-content:center}.hero{padding:65px 0}.hero h1{font-size:38px}.hero p{font-size:15px}.grid,.contact,.footer-grid{grid-template-columns:1fr}.countries{grid-template-columns:repeat(2,1fr)}section{padding:55px 0}.section-head h2,.cta h2{font-size:28px}}
+@media(max-width:450px){.hero h1{font-size:32px}.countries{grid-template-columns:1fr}.buttons .btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="toplinks">
+      <a href="tel:+639858085805">☎ +639858085805</a>
+      <a href="https://wa.me/639858085805" target="_blank" rel="nofollow">WhatsApp</a>
+      <a href="https://t.me/xhie01" target="_blank" rel="nofollow">Telegram</a>
+    </div>
+    <div>24/7 Customer Support</div>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">Phone<span>List</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#categories">Phone Number List</a></li>
+        <li><a href="#whatsapp">WhatsApp Number List</a></li>
+        <li><a href="#telegram">Telegram Number List</a></li>
+        <li><a href="#email">Email List</a></li>
+        <li><a href="#library">Phone Number Library</a></li>
+        <li><a href="#special">Special Database</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="badge">◆ Professional Data Resources</div>
+    <h1>Find the Right <span>Phone &amp; Business Data</span></h1>
+    <p>Explore phone number lists, WhatsApp number lists, Telegram data, email lists, phone number library resources and special database categories.</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="#categories">Explore Database</a>
+      <a class="btn btn-outline" href="#countries">Browse Countries</a>
+    </div>
+  </div>
+</section>
+
+<section id="categories">
+  <div class="container">
+    <div class="section-head"><h2>Database Categories</h2><p>Explore the main data categories and find the resource that matches your requirements.</p></div>
+    <div class="grid">
+      <article class="card" id="phone"><div class="icon">☎</div><h3>Phone Number List</h3><p>Explore country-based phone number list categories and database resources.</p><a class="link" href="#countries">View Phone Lists →</a></article>
+      <article class="card" id="whatsapp"><div class="icon">◉</div><h3>WhatsApp Number List</h3><p>Browse WhatsApp number list categories and related data resources.</p><a class="link" href="#countries">View WhatsApp Lists →</a></article>
+      <article class="card" id="telegram"><div class="icon">➤</div><h3>Telegram Number List</h3><p>Explore Telegram number list categories and available resources.</p><a class="link" href="#countries">View Telegram Lists →</a></article>
+      <article class="card" id="email"><div class="icon">✉</div><h3>Email List</h3><p>Discover email list categories for different markets and business requirements.</p><a class="link" href="#countries">View Email Lists →</a></article>
+      <article class="card" id="library"><div class="icon">▤</div><h3>Phone Number Library</h3><p>Explore phone number library resources and related database categories.</p><a class="link" href="#countries">Open Library →</a></article>
+      <article class="card" id="special"><div class="icon">◆</div><h3>Special Database</h3><p>Discover specialized database categories for different data requirements.</p><a class="link" href="#countries">Explore Database →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head"><h2>Explore Data Collections</h2><p>Popular database resources available through the Phone List platform.</p></div>
+    <div class="grid">
+      <article class="card"><h3>Phone Number Database</h3><p>Country-specific phone number database resources.</p><a class="btn btn-primary" style="background:#2563eb;color:#fff" href="#countries">Explore</a></article>
+      <article class="card"><h3>WhatsApp Database</h3><p>WhatsApp number list categories and resources.</p><a class="btn btn-primary" style="background:#2563eb;color:#fff" href="#whatsapp">Explore</a></article>
+      <article class="card"><h3>Telegram Database</h3><p>Telegram number list categories and resources.</p><a class="btn btn-primary" style="background:#2563eb;color:#fff" href="#telegram">Explore</a></article>
+      <article class="card"><h3>Email Database</h3><p>Email list categories and database resources.</p><a class="btn btn-primary" style="background:#2563eb;color:#fff" href="#email">Explore</a></article>
+      <article class="card"><h3>Phone Number Library</h3><p>Phone number library and related categories.</p><a class="btn btn-primary" style="background:#2563eb;color:#fff" href="#library">Explore</a></article>
+      <article class="card"><h3>Special Database</h3><p>Specialized database categories and resources.</p><a class="btn btn-primary" style="background:#2563eb;color:#fff" href="#special">Explore</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="countries">
+  <div class="container">
+    <div class="section-head"><h2>Country Phone Databases</h2><p>Search and open a country database page.</p></div>
+    <div class="country-search"><span class="search-icon">⌕</span><input id="countrySearch" type="search" placeholder="Search country..."></div>
+    <div class="countries" id="countryGrid">
+      <a class="country" href="https://phonelist.io/el-salvador-number-database/">El Salvador</a>
+      <a class="country" href="https://phonelist.io/estonia-number-database/">Estonia</a>
+      <a class="country" href="https://phonelist.io/finland-number-database/">Finland</a>
+      <a class="country" href="https://phonelist.io/france-number-database/">France</a>
+      <a class="country" href="https://phonelist.io/georgia-number-database/">Georgia</a>
+      <a class="country" href="https://phonelist.io/germany-number-database/">Germany</a>
+      <a class="country" href="https://phonelist.io/ghana-number-database/">Ghana</a>
+      <a class="country" href="https://phonelist.io/greece-number-database/">Greece</a>
+      <a class="country" href="https://phonelist.io/guatemala-number-database/">Guatemala</a>
+      <a class="country" href="https://phonelist.io/honduras-number-database/">Honduras</a>
+      <a class="country" href="https://phonelist.io/hong-kong-number-database/">Hong Kong</a>
+      <a class="country" href="https://phonelist.io/hungary-number-database/">Hungary</a>
+      <a class="country" href="https://phonelist.io/iceland-number-database/">Iceland</a>
+      <a class="country" href="https://phonelist.io/india-number-database/">India</a>
+      <a class="country" href="https://phonelist.io/indonesia-number-database/">Indonesia</a>
+      <a class="country" href="https://phonelist.io/iran-number-database/">Iran</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head"><h2>Frequently Asked Questions</h2><p>Common questions about Phone List and its database categories.</p></div>
+    <div class="faq">
+      <div class="faq-item"><div class="faq-q">What is a Phone Number List? <span>+</span></div><div class="faq-a">A phone number list is a collection of phone numbers organized by country, market or category.</div></div>
+      <div class="faq-item"><div class="faq-q">What database categories are available? <span>+</span></div><div class="faq-a">The website includes phone number lists, WhatsApp number lists, Telegram number lists, email lists, phone number library resources and special database categories.</div></div>
+      <div class="faq-item"><div class="faq-q">Are country database pages available? <span>+</span></div><div class="faq-a">Yes. Country-specific database links are available in the country section above.</div></div>
+      <div class="faq-item"><div class="faq-q">How can I contact support? <span>+</span></div><div class="faq-a">You can contact support by phone, WhatsApp or Telegram using the contact information shown on this page.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2>Looking for a Specific Database?</h2>
+    <p>Browse the categories and country resources to find the database page you need.</p>
+    <a class="btn btn-primary" href="#categories">Explore Categories</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head"><h2>Contact Us</h2><p>Choose your preferred support channel.</p></div>
+    <div class="contact">
+      <div class="contact-card"><div class="icon">☎</div><h3>Phone</h3><p><a href="tel:+639858085805">+639858085805</a></p></div>
+      <div class="contact-card"><div class="icon">◉</div><h3>WhatsApp</h3><p><a href="https://wa.me/639858085805" target="_blank" rel="nofollow">Chat on WhatsApp</a></p></div>
+      <div class="contact-card"><div class="icon">➤</div><h3>Telegram</h3><p><a href="https://t.me/xhie01" target="_blank" rel="nofollow">@xhie01</a></p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <div class="logo">Phone<span>List</span></div>
+      <p class="footer-text" style="margin-top:14px">Phone List provides phone number lists, WhatsApp data, Telegram data, email lists and special database resources.</p>
+      <div class="social">
+        <a href="https://wa.me/639858085805" target="_blank" rel="nofollow">WA</a>
+        <a href="https://t.me/xhie01" target="_blank" rel="nofollow">TG</a>
+      </div>
+    </div>
+    <div><div class="footer-title">Quick Links</div><ul class="footer-links"><li><a href="#home">Home</a></li><li><a href="#phone">Phone Number List</a></li><li><a href="#whatsapp">WhatsApp Number List</a></li><li><a href="#telegram">Telegram Number List</a></li></ul></div>
+    <div><div class="footer-title">More Data</div><ul class="footer-links"><li><a href="#email">Email List</a></li><li><a href="#library">Phone Number Library</a></li><li><a href="#special">Special Database</a></li><li><a href="#countries">Countries</a></li></ul></div>
+    <div><div class="footer-title">Contact</div><ul class="footer-links"><li><a href="tel:+639858085805">+639858085805</a></li><li><a href="https://wa.me/639858085805" target="_blank" rel="nofollow">WhatsApp</a></li><li><a href="https://t.me/xhie01" target="_blank" rel="nofollow">Telegram</a></li><li>24/7 Customer Support</li></ul></div>
+  </div>
+  <div class="container copyright">© <span id="year"></span> Phone List. All Rights Reserved.</div>
+</footer>
+
+<script>
+const menuBtn=document.getElementById("menuBtn"),menu=document.getElementById("menu");
+menuBtn.addEventListener("click",()=>menu.classList.toggle("show"));
+document.querySelectorAll("#menu a").forEach(a=>a.addEventListener("click",()=>menu.classList.remove("show")));
+document.getElementById("countrySearch").addEventListener("input",function(){
+  const q=this.value.toLowerCase().trim();
+  document.querySelectorAll(".country").forEach(c=>{
+    c.style.display=c.textContent.toLowerCase().includes(q)?"block":"none";
+  });
+});
+document.querySelectorAll(".faq-q").forEach(q=>q.addEventListener("click",()=>{
+  const a=q.nextElementSibling;
+  const open=a.style.display==="block";
+  a.style.display=open?"none":"block";
+  q.querySelector("span").textContent=open?"+":"−";
+}));
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
