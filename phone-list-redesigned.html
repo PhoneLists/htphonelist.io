@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Phone Number List | WhatsApp, Telegram & Email Database</title>
+
+<meta name="description" content="Explore phone number lists, WhatsApp number lists, Telegram number lists, email lists and country-specific phone number databases.">
+<meta name="keywords" content="phone number list, phone number database, WhatsApp number list, Telegram number list, email list, phone number library, country phone database">
+
+<style>
+:root{
+    --primary:#6d4aff;
+    --primary-dark:#4b2bbd;
+    --secondary:#12b8a6;
+    --accent:#ff7a59;
+    --dark:#111827;
+    --text:#1f2937;
+    --muted:#667085;
+    --bg:#f5f7fb;
+    --surface:#ffffff;
+    --border:#e6e9f0;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+a{text-decoration:none;}
+
+.header{background:rgba(255,255,255,.96);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:999;backdrop-filter:blur(12px);}
+.navbar{max-width:1200px;margin:auto;min-height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;}
+.logo{font-size:26px;font-weight:800;letter-spacing:-.5px;color:var(--primary);}
+.logo span{color:var(--dark);}
+.menu{display:flex;align-items:center;gap:4px;list-style:none;}
+.menu a{display:block;padding:10px 12px;color:#344054;font-size:14px;font-weight:600;border-radius:9px;transition:.2s ease;}
+.menu a:hover,.menu .active{background:#f0edff;color:var(--primary);}
+
+.hero{
+    position:relative;overflow:hidden;
+    background:radial-gradient(circle at 15% 20%,rgba(18,184,166,.28),transparent 28%),
+               radial-gradient(circle at 85% 15%,rgba(109,74,255,.38),transparent 30%),
+               linear-gradient(135deg,#111827 0%,#25204d 52%,#153c45 100%);
+    padding:92px 20px 100px;text-align:center;color:#fff;
+}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none;}
+.hero:before{width:260px;height:260px;right:-90px;bottom:-110px;border:45px solid rgba(255,255,255,.05);}
+.hero:after{width:180px;height:180px;left:-70px;bottom:-80px;border:30px solid rgba(18,184,166,.08);}
+.hero-content{position:relative;z-index:2;max-width:880px;margin:auto;}
+.hero h1{font-size:48px;line-height:1.12;margin-bottom:20px;font-weight:800;letter-spacing:-1px;}
+.hero p{max-width:740px;margin:0 auto 32px;font-size:18px;color:#d9def0;}
+.hero-buttons{display:flex;justify-content:center;gap:13px;flex-wrap:wrap;}
+.btn{display:inline-block;padding:13px 23px;border-radius:10px;font-weight:700;font-size:15px;transition:.2s ease;}
+.btn-primary{background:linear-gradient(135deg,var(--primary),#8a6cff);color:#fff;box-shadow:0 10px 24px rgba(109,74,255,.25);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(109,74,255,.32);}
+.btn-outline{border:1px solid rgba(255,255,255,.45);color:#fff;background:rgba(255,255,255,.06);}
+.btn-outline:hover{background:#fff;color:var(--dark);}
+
+.intro{max-width:1000px;margin:auto;padding:70px 20px 30px;text-align:center;}
+.intro h2{font-size:32px;margin-bottom:13px;color:var(--dark);}
+.intro p{color:var(--muted);font-size:16px;}
+
+.category-bar{max-width:1200px;margin:22px auto 48px;padding:0 20px;}
+.category-inner{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:20px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;box-shadow:0 8px 28px rgba(16,24,40,.05);}
+.category-inner a{background:#f3f1ff;color:#403575;padding:10px 17px;border-radius:999px;font-size:14px;font-weight:700;transition:.2s ease;}
+.category-inner a:hover{background:var(--primary);color:#fff;transform:translateY(-1px);}
+
+.country-section{max-width:1200px;margin:auto;padding:10px 20px 78px;}
+.section-heading{text-align:center;margin-bottom:38px;}
+.section-heading h2{font-size:33px;margin-bottom:10px;color:var(--dark);}
+.section-heading p{color:#737d90;}
+.country-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+
+.country-card{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;box-shadow:0 5px 18px rgba(16,24,40,.04);}
+.country-card:after{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary),var(--accent));opacity:0;transition:.25s ease;}
+.country-card:hover{transform:translateY(-7px);box-shadow:0 18px 38px rgba(16,24,40,.11);border-color:#d7d0ff;}
+.country-card:hover:after{opacity:1;}
+.country-card img{width:100%;height:150px;object-fit:cover;display:block;transition:transform .35s ease;}
+.country-card:hover img{transform:scale(1.035);}
+.card-content{padding:19px;}
+.card-content h3{font-size:17px;margin-bottom:10px;line-height:1.4;}
+.card-content h3 a{color:var(--dark);}
+.card-content h3 a:hover{color:var(--primary);}
+.view-link{color:var(--primary);font-size:14px;font-weight:800;}
+.view-link:hover{color:var(--primary-dark);}
+
+.cta{position:relative;overflow:hidden;background:linear-gradient(135deg,#19152f,#172f35);color:#fff;text-align:center;padding:72px 20px;}
+.cta:before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:55px solid rgba(109,74,255,.08);left:-110px;top:-150px;}
+.cta h2{position:relative;z-index:1;font-size:32px;margin-bottom:12px;}
+.cta p{position:relative;z-index:1;color:#cdd4e1;max-width:700px;margin:0 auto 25px;}
+.cta .btn{position:relative;z-index:1;}
+
+.footer{background:#0b1020;color:#aeb7c8;padding:48px 20px 25px;}
+.footer-inner{max-width:1200px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:35px;}
+.footer h3{color:#fff;margin-bottom:14px;}
+.footer p{font-size:14px;}
+.footer ul{list-style:none;}
+.footer li{margin-bottom:8px;}
+.footer a{color:#aeb7c8;font-size:14px;}
+.footer a:hover{color:#fff;}
+.copyright{max-width:1200px;margin:30px auto 0;padding-top:20px;border-top:1px solid #252d40;text-align:center;font-size:13px;}
+
+@media(max-width:1000px){
+    .country-grid{grid-template-columns:repeat(3,1fr);}
+    .menu{gap:0;}
+    .menu a{padding:9px 8px;font-size:13px;}
+}
+@media(max-width:750px){
+    .navbar{flex-direction:column;padding:15px;}
+    .menu{flex-wrap:wrap;justify-content:center;margin-top:10px;}
+    .hero{padding:65px 20px 72px;}
+    .hero h1{font-size:37px;}
+    .hero p{font-size:16px;}
+    .country-grid{grid-template-columns:repeat(2,1fr);}
+    .footer-inner{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:500px){
+    .country-grid{grid-template-columns:1fr;}
+    .footer-inner{grid-template-columns:1fr;}
+    .hero h1{font-size:30px;}
+    .section-heading h2{font-size:27px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+<nav class="navbar">
+
+    <a href="https://phonelist.io/" class="logo">
+        Phone<span>List</span>
+    </a>
+
+    <ul class="menu">
+        <li><a href="https://phonelist.io/" class="active">Home</a></li>
+
+        <li>
+            <a href="https://phonelist.io/phone-number-list">
+                Phone Number List
+            </a>
+        </li>
+
+        <li>
+            <a href="https://phonelist.io/whatsapp-number-list">
+                WhatsApp Number List
+            </a>
+        </li>
+
+        <li>
+            <a href="https://phonelist.io/telegram-number-list">
+                Telegram Number List
+            </a>
+        </li>
+
+        <li>
+            <a href="https://phonelist.io/email-list">
+                Email List
+            </a>
+        </li>
+
+        <li>
+            <a href="https://phonelist.io/phone-number-library">
+                Phone Number Library
+            </a>
+        </li>
+
+        <li>
+            <a href="https://phonelist.io/special-database">
+                Special Database
+            </a>
+        </li>
+    </ul>
+
+</nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Global Phone Number & Contact Database
+        </h1>
+
+        <p>
+            Explore country-specific phone number lists, WhatsApp numbers,
+            Telegram numbers, email databases and specialized contact data.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="https://phonelist.io/phone-number-list"
+               class="btn btn-primary">
+                Explore Phone Lists
+            </a>
+
+            <a href="https://phonelist.io/email-list"
+               class="btn btn-outline">
+                Explore Email Lists
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTRO -->
+<section class="intro">
+
+    <div style="display:inline-block;background:#f0edff;color:#5a3fd1;padding:7px 13px;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:12px;">GLOBAL DATA DIRECTORY</div>
+    <h2>Explore Our Database Categories</h2>
+
+    <p>
+        Find contact databases organized by data type and country.
+        Browse our collection of phone number, WhatsApp, Telegram and
+        email lists.
+    </p>
+
+</section>
+
+
+<!-- CATEGORY LINKS -->
+<section class="category-bar">
+
+    <div class="category-inner">
+
+        <a href="https://phonelist.io/phone-number-list">
+            Phone Number List
+        </a>
+
+        <a href="https://phonelist.io/whatsapp-number-list">
+            WhatsApp Number List
+        </a>
+
+        <a href="https://phonelist.io/telegram-number-list">
+            Telegram Number List
+        </a>
+
+        <a href="https://phonelist.io/email-list">
+            Email List
+        </a>
+
+        <a href="https://phonelist.io/phone-number-library">
+            Phone Number Library
+        </a>
+
+        <a href="https://phonelist.io/special-database">
+            Special Database
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- COUNTRY DATABASE -->
+<section class="country-section">
+
+    <div class="section-heading">
+
+        <h2>Country Phone Number Lists</h2>
+
+        <p>
+            Browse phone number databases by country and explore
+            country-specific contact lists.
+        </p>
+
+    </div>
+
+
+    <div class="country-grid">
+
+
+        <!-- Afghanistan -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/afghanistan-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Afghanistan-Phone-Number-List-1.png"
+                alt="Afghanistan Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/afghanistan-number-database/">
+                        Afghanistan Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/afghanistan-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Albania -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/albania-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Albania-Phone-Number-List-1.png"
+                alt="Albania Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/albania-number-database/">
+                        Albania Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/albania-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Algeria -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/algeria-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Algeria-Phone-Number-List-1.png"
+                alt="Algeria Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/algeria-number-database/">
+                        Algeria Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/algeria-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Argentina -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/argentina-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Argentina-Phone-Number-List-1.png"
+                alt="Argentina Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/argentina-number-database/">
+                        Argentina Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/argentina-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Armenia -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/armenia-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Armenia-Phone-Number-List-1.png"
+                alt="Armenia Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/armenia-number-database/">
+                        Armenia Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/armenia-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Australia -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/australia-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Australia-Phone-Number-List-1.png"
+                alt="Australia Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/australia-number-database/">
+                        Australia Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/australia-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Austria -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/austria-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Austria-Phone-Number-List-1.png"
+                alt="Austria Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/austria-number-database/">
+                        Austria Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/austria-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Azerbaijan -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/azerbaijan-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Azerbaijan-Phone-Number-List-1.png"
+                alt="Azerbaijan Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/azerbaijan-number-database/">
+                        Azerbaijan Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/azerbaijan-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Bahamas -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/bahamas-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Bahamas-Phone-Number-List-1.png"
+                alt="Bahamas Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/bahamas-number-database/">
+                        Bahamas Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/bahamas-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Bahrain -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/bahrain-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Bahrain-Phone-Number-List-1.png"
+                alt="Bahrain Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/bahrain-number-database/">
+                        Bahrain Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/bahrain-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Belarus -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/belarus-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Belarus-Phone-Number-List-1.png"
+                alt="Belarus Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/belarus-number-database/">
+                        Belarus Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/belarus-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Belgium -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/belgium-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Belgium-Phone-Number-List-1.png"
+                alt="Belgium Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/belgium-number-database/">
+                        Belgium Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/belgium-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Belize -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/belize-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Belize-Phone-Number-List-1.png"
+                alt="Belize Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/belize-number-database/">
+                        Belize Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/belize-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Benin -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/benin-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Benin-Phone-Number-List-1.png"
+                alt="Benin Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/benin-number-database/">
+                        Benin Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/benin-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Bolivia -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/bolivia-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Bolivia-Phone-Number-List-1.png"
+                alt="Bolivia Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/bolivia-number-database/">
+                        Bolivia Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/bolivia-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Bosnia -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/bosnia-and-herzegovina-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Bosnia-and-Herzegovina-Phone-Number-List-1.png"
+                alt="Bosnia and Herzegovina Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/bosnia-and-herzegovina-number-database/">
+                        Bosnia and Herzegovina Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/bosnia-and-herzegovina-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Brazil -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/brazil-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Brazil-Phone-Number-List-1.png"
+                alt="Brazil Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/brazil-number-database/">
+                        Brazil Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/brazil-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Bulgaria -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/bulgaria-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Bulgaria-Phone-Number-List-1.png"
+                alt="Bulgaria Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/bulgaria-number-database/">
+                        Bulgaria Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/bulgaria-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Cambodia -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/cambodia-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Cambodia-Phone-Number-List-1.png"
+                alt="Cambodia Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/cambodia-number-database/">
+                        Cambodia Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/cambodia-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Cameroon -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/cameroon-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Cameroon-Phone-Number-List-1.png"
+                alt="Cameroon Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/cameroon-number-database/">
+                        Cameroon Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/cameroon-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Canada -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/canada-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Canada-Phone-Number-List-1.png"
+                alt="Canada Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/canada-number-database/">
+                        Canada Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/canada-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Cayman Islands -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/cayman-islands-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Cayman-Islands-Phone-Number-List-1.png"
+                alt="Cayman Islands Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/cayman-islands-number-database/">
+                        Cayman Islands Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/cayman-islands-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Chile -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/chile-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Chile-Phone-Number-List-1.png"
+                alt="Chile Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/chile-number-database/">
+                        Chile Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/chile-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Vietnam -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/vietnam-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Vietnam-Phone-Number-List-1.png"
+                alt="Vietnam Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/vietnam-number-database/">
+                        Vietnam Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/vietnam-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Colombia -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/colombia-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Colombia-Phone-Number-List-1.png"
+                alt="Colombia Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/colombia-number-database/">
+                        Colombia Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/colombia-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Costa Rica -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/costa-rica-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Costa-Rica-Phone-Number-List-1.png"
+                alt="Costa Rica Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/costa-rica-number-database/">
+                        Costa Rica Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/costa-rica-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Croatia -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/croatia-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Croatia-Phone-Number-List-1.png"
+                alt="Croatia Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/croatia-number-database/">
+                        Croatia Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/croatia-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Cyprus -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/cyprus-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Cyprus-Phone-Number-List-1.png"
+                alt="Cyprus Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/cyprus-number-database/">
+                        Cyprus Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/cyprus-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Czech Republic -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/czech-republic-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Czech-Republic-Phone-Number-List-1.png"
+                alt="Czech Republic Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/czech-republic-number-database/">
+                        Czech Republic Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/czech-republic-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Denmark -->
+        <article class="country-card">
+
+            <a href="https://phonelist.io/denmark-number-database/">
+
+                <img
+                src="https://phonelist.io/wp-content/uploads/2023/12/Denmark-Phone-Number-List-2.png"
+                alt="Denmark Phone Number List"
+                loading="lazy">
+
+            </a>
+
+            <div class="card-content">
+
+                <h3>
+                    <a href="https://phonelist.io/denmark-number-database/">
+                        Denmark Phone Number List
+                    </a>
+                </h3>
+
+                <a class="view-link"
+                   href="https://phonelist.io/denmark-number-database/">
+                   View Database →
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <h2>Find the Database You Need</h2>
+
+    <p>
+        Explore our phone number, WhatsApp, Telegram and email
+        database categories to find the right contact data.
+    </p>
+
+    <a href="https://phonelist.io/special-database"
+       class="btn btn-primary">
+        Explore Special Database
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <div>
+            <h3>PhoneList</h3>
+
+            <p>
+                Explore phone number lists, contact databases,
+                WhatsApp lists, Telegram lists and email databases
+                organized by country and data type.
+            </p>
+        </div>
+
+
+        <div>
+            <h3>Database</h3>
+
+            <ul>
+                <li>
+                    <a href="https://phonelist.io/phone-number-list">
+                        Phone Number List
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://phonelist.io/whatsapp-number-list">
+                        WhatsApp Number List
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://phonelist.io/telegram-number-list">
+                        Telegram Number List
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div>
+            <h3>Resources</h3>
+
+            <ul>
+                <li>
+                    <a href="https://phonelist.io/email-list">
+                        Email List
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://phonelist.io/phone-number-library">
+                        Phone Number Library
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://phonelist.io/special-database">
+                        Special Database
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div>
+            <h3>Navigation</h3>
+
+            <ul>
+                <li>
+                    <a href="https://phonelist.io/">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://phonelist.io/phone-number-list">
+                        Phone Lists
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://phonelist.io/email-list">
+                        Email Lists
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 PhoneList. All Rights Reserved.
+    </div>
+
+</footer>
+
+</body>
+</html>
